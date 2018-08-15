@@ -1,0 +1,3 @@
+D:/workspace/ffmpeg/Android_project/temp/wlplayer/wlplayer/libwlplayer/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/zxplayer.dir
+D:/workspace/ffmpeg/Android_project/temp/wlplayer/wlplayer/libwlplayer/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/edit_cache.dir
+D:/workspace/ffmpeg/Android_project/temp/wlplayer/wlplayer/libwlplayer/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/rebuild_cache.dir

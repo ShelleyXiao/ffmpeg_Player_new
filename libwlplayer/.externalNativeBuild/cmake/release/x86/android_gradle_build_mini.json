@@ -1,0 +1,56 @@
+{
+  "buildFiles": [
+    "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\workspace\\Android_Env\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\.externalNativeBuild\\cmake\\release\\x86 --target clean"
+  ],
+  "libraries": {
+    "avfilter-6-Release-x86": {
+      "artifactName": "avfilter-6",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libavfilter-6.so"
+    },
+    "swscale-4-Release-x86": {
+      "artifactName": "swscale-4",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libswscale-4.so"
+    },
+    "avdevice-57-Release-x86": {
+      "artifactName": "avdevice-57",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libavdevice-57.so"
+    },
+    "postproc-54-Release-x86": {
+      "artifactName": "postproc-54",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libpostproc-54.so"
+    },
+    "avcodec-57-Release-x86": {
+      "artifactName": "avcodec-57",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libavcodec-57.so"
+    },
+    "swresample-2-Release-x86": {
+      "artifactName": "swresample-2",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libswresample-2.so"
+    },
+    "avutil-55-Release-x86": {
+      "artifactName": "avutil-55",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libavutil-55.so"
+    },
+    "zxplayer-Release-x86": {
+      "artifactName": "zxplayer",
+      "buildCommand": "D:\\workspace\\Android_Env\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\.externalNativeBuild\\cmake\\release\\x86 --target zxplayer",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\build\\intermediates\\cmake\\release\\obj\\x86\\libzxplayer.so"
+    },
+    "avformat-57-Release-x86": {
+      "artifactName": "avformat-57",
+      "abi": "x86",
+      "output": "D:\\workspace\\ffmpeg\\Android_project\\temp\\wlplayer\\wlplayer\\libwlplayer\\src\\main\\jniLibs\\x86\\libavformat-57.so"
+    }
+  }
+}
