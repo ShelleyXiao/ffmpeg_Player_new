@@ -1,4 +1,4 @@
-# Install script for directory: D:/workspace/ffmpeg/Android_project/temp/wlplayer/wlplayer/libwlplayer
+# Install script for directory: F:/ffmpeg_source/Android_pro/video_player/ffmpeg_Player_new/libwlplayer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/workspace/ffmpeg/Android_project/temp/wlplayer/wlplayer/libwlplayer/.externalNativeBuild/cmake/release/armeabi/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/ffmpeg_source/Android_pro/video_player/ffmpeg_Player_new/libwlplayer/.externalNativeBuild/cmake/release/armeabi/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

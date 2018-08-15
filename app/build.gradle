@@ -12,7 +12,7 @@ android {
 
         ndk {
             abiFilter("armeabi")
-            abiFilter("x86")
+//            abiFilter("x86")
         }
 
     }

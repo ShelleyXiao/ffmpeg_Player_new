@@ -23,8 +23,8 @@ import com.ywl5320.player.base.BaseActivity;
 import com.ywl5320.player.bean.RadioLiveChannelBean;
 import com.ywl5320.player.widget.SquareImageView;
 import com.ywl5320.util.WlTimeUtil;
-import com.ywl5320.wlplayer.WlPlayer;
-import com.ywl5320.wlplayer.WlTimeBean;
+import com.ywl5320.ZXPlayer.ZXVideoPlayer;
+import com.ywl5320.ZXPlayer.WlTimeBean;
 
 import java.util.List;
 
@@ -50,7 +50,7 @@ public class RadioLiveActivity extends BaseActivity{
 
     private List<RadioLiveChannelBean> datas;
     private int index = -1;
-    private WlPlayer wlPlayer;
+    private ZXVideoPlayer wlPlayer;
     private boolean isPlay = true;
 
     @Override
@@ -63,7 +63,7 @@ public class RadioLiveActivity extends BaseActivity{
         Gson gson = new Gson();
         datas = gson.fromJson(data, new TypeToken<List<RadioLiveChannelBean>>(){}.getType());
 
-        wlPlayer = new WlPlayer();
+        wlPlayer = new ZXVideoPlayer();
         playRadio(datas.get(index));
 
         wlPlayer.setWlOnPreparedListener(new WlOnPreparedListener() {

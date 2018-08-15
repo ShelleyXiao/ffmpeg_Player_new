@@ -6,7 +6,7 @@
     android:background="#000"
     tools:context="com.ywl5320.player.activity.VideoLiveActivity">
 
-    <com.ywl5320.opengles.WlGlSurfaceView
+    <com.ywl5320.opengles.ZXGlSurfaceView
         android:id="@+id/surfaceview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

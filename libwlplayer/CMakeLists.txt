@@ -22,10 +22,10 @@ add_library(
 
              SHARED
 
-             src/main/cpp/wlplayer.cpp
-             src/main/cpp/WlBasePlayer.cpp
-             src/main/cpp/WlFFmpeg.cpp
-             src/main/cpp/WlJavaCall.cpp
+             src/main/cpp/ZXVideoPlayer.cpp
+             src/main/cpp/base_player.cpp
+             src/main/cpp/video_player_control.cpp
+             src/main/cpp/JavaJNICallback.cpp
              src/main/cpp/WlPlayStatus.cpp
 
              ${FILES_AUDIO}

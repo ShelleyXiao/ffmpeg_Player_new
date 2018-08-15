@@ -12,7 +12,7 @@ import android.view.Surface;
 import com.ywl5320.listener.WlOnGlSurfaceViewOncreateListener;
 import com.ywl5320.listener.WlOnRenderRefreshListener;
 import com.ywl5320.util.MyLog;
-import com.ywl5320.wlplayer.R;
+import com.ywl5320.ZXPlayer.R;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
@@ -196,9 +196,9 @@ public class WlGlRender implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
      */
     private void initMediacodecShader()
     {
-        String vertexShader = WlShaderUtils.readRawTextFile(context, R.raw.vertex_base);
-        String fragmentShader = WlShaderUtils.readRawTextFile(context, R.raw.fragment_mediacodec);
-        programId_mediacodec = WlShaderUtils.createProgram(vertexShader, fragmentShader);
+        String vertexShader = ShaderUtils.readRawTextFile(context, R.raw.vertex_base);
+        String fragmentShader = ShaderUtils.readRawTextFile(context, R.raw.fragment_mediacodec);
+        programId_mediacodec = ShaderUtils.createProgram(vertexShader, fragmentShader);
         aPositionHandle_mediacodec= GLES20.glGetAttribLocation(programId_mediacodec,"av_Position");
         aTextureCoordHandle_mediacodec =GLES20.glGetAttribLocation(programId_mediacodec,"af_Position");
         uTextureSamplerHandle_mediacodec =GLES20.glGetUniformLocation(programId_mediacodec,"sTexture");
@@ -208,7 +208,7 @@ public class WlGlRender implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
 
         textureid_mediacodec = textures[0];
         GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, textureid_mediacodec);
-        WlShaderUtils.checkGlError("glBindTexture mTextureID");
+        ShaderUtils.checkGlError("glBindTexture mTextureID");
 
         GLES20.glTexParameterf(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
                 GLES20.GL_NEAREST);
@@ -245,9 +245,9 @@ public class WlGlRender implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
 
     private void initYuvShader()
     {
-        String vertexShader = WlShaderUtils.readRawTextFile(context, R.raw.vertex_base);
-        String fragmentShader = WlShaderUtils.readRawTextFile(context, R.raw.fragment_yuv);
-        programId_yuv = WlShaderUtils.createProgram(vertexShader, fragmentShader);
+        String vertexShader = ShaderUtils.readRawTextFile(context, R.raw.vertex_base);
+        String fragmentShader = ShaderUtils.readRawTextFile(context, R.raw.fragment_yuv);
+        programId_yuv = ShaderUtils.createProgram(vertexShader, fragmentShader);
         aPositionHandle_yuv= GLES20.glGetAttribLocation(programId_yuv,"av_Position");
         aTextureCoordHandle_yuv =GLES20.glGetAttribLocation(programId_yuv,"af_Position");
 
@@ -316,9 +316,9 @@ public class WlGlRender implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
 
     private void initStop()
     {
-        String vertexShader = WlShaderUtils.readRawTextFile(context, R.raw.vertex_base);
-        String fragmentShader = WlShaderUtils.readRawTextFile(context, R.raw.fragment_no);
-        programId_stop = WlShaderUtils.createProgram(vertexShader, fragmentShader);
+        String vertexShader = ShaderUtils.readRawTextFile(context, R.raw.vertex_base);
+        String fragmentShader = ShaderUtils.readRawTextFile(context, R.raw.fragment_no);
+        programId_stop = ShaderUtils.createProgram(vertexShader, fragmentShader);
         aPositionHandle_stop= GLES20.glGetAttribLocation(programId_stop,"av_Position");
         aTextureCoordHandle_stop =GLES20.glGetAttribLocation(programId_stop,"af_Position");
     }

@@ -17,7 +17,7 @@
 rule CXX_COMPILER__zxplayer
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\workspace\Android_Env\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android --gcc-toolchain=D:/workspace/Android_Env/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=D:/workspace/Android_Env/sdk/ndk-bundle/platforms/android-16/arch-x86  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
+  command = E:\WorkEvnrionment\android-studio-ide-171.4474551-windows\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android --gcc-toolchain=E:/WorkEvnrionment/android-studio-ide-171.4474551-windows/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=E:/WorkEvnrionment/android-studio-ide-171.4474551-windows/sdk/ndk-bundle/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
   description = Building CXX object $out
 
 
@@ -25,7 +25,7 @@ rule CXX_COMPILER__zxplayer
 # Rule for linking CXX shared library.
 
 rule CXX_SHARED_LIBRARY_LINKER__zxplayer
-  command = cmd.exe /C "$PRE_LINK && D:\workspace\Android_Env\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android --gcc-toolchain=D:/workspace/Android_Env/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=D:/workspace/Android_Env/sdk/ndk-bundle/platforms/android-16/arch-x86 -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && E:\WorkEvnrionment\android-studio-ide-171.4474551-windows\sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android --gcc-toolchain=E:/WorkEvnrionment/android-studio-ide-171.4474551-windows/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=E:/WorkEvnrionment/android-studio-ide-171.4474551-windows/sdk/ndk-bundle/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\workspace\Android_Env\sdk\cmake\3.6.4111459\bin\cmake.exe -HD:\workspace\ffmpeg\Android_project\temp\wlplayer\wlplayer\libwlplayer -BD:\workspace\ffmpeg\Android_project\temp\wlplayer\wlplayer\libwlplayer\.externalNativeBuild\cmake\debug\x86
+  command = E:\WorkEvnrionment\android-studio-ide-171.4474551-windows\sdk\cmake\3.6.4111459\bin\cmake.exe -HF:\ffmpeg_source\Android_pro\video_player\ffmpeg_Player_new\libwlplayer -BF:\ffmpeg_source\Android_pro\video_player\ffmpeg_Player_new\libwlplayer\.externalNativeBuild\cmake\debug\x86
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = D:\workspace\Android_Env\sdk\cmake\3.6.4111459\bin\ninja.exe -t clean
+  command = E:\WorkEvnrionment\android-studio-ide-171.4474551-windows\sdk\cmake\3.6.4111459\bin\ninja.exe -t clean
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = D:\workspace\Android_Env\sdk\cmake\3.6.4111459\bin\ninja.exe -t targets
+  command = E:\WorkEvnrionment\android-studio-ide-171.4474551-windows\sdk\cmake\3.6.4111459\bin\ninja.exe -t targets
   description = All primary targets available:
 

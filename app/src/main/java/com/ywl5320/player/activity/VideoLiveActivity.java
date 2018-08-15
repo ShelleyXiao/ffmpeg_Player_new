@@ -20,18 +20,18 @@ import com.ywl5320.listener.WlOnErrorListener;
 import com.ywl5320.listener.WlOnInfoListener;
 import com.ywl5320.listener.WlOnLoadListener;
 import com.ywl5320.listener.WlOnPreparedListener;
-import com.ywl5320.opengles.WlGlSurfaceView;
+import com.ywl5320.opengles.ZXGlSurfaceView;
 import com.ywl5320.player.R;
 import com.ywl5320.player.base.BaseActivity;
 import com.ywl5320.util.MyLog;
 import com.ywl5320.util.WlTimeUtil;
-import com.ywl5320.wlplayer.WlPlayer;
-import com.ywl5320.wlplayer.WlTimeBean;
+import com.ywl5320.ZXPlayer.ZXVideoPlayer;
+import com.ywl5320.ZXPlayer.WlTimeBean;
 
 public class VideoLiveActivity extends BaseActivity {
 
-    private WlGlSurfaceView surfaceview;
-    private WlPlayer wlPlayer;
+    private ZXGlSurfaceView surfaceview;
+    private ZXVideoPlayer wlPlayer;
     private ProgressBar progressBar;
     private TextView tvTime;
     private ImageView ivPause;
@@ -60,7 +60,7 @@ public class VideoLiveActivity extends BaseActivity {
         ivCutImg = findViewById(R.id.iv_cutimg);
         ivShowImg = findViewById(R.id.iv_show_img);
 
-        wlPlayer = new WlPlayer();
+        wlPlayer = new ZXVideoPlayer();
         wlPlayer.setOnlyMusic(false);
 
         pathurl = getIntent().getExtras().getString("url");
@@ -84,7 +84,7 @@ public class VideoLiveActivity extends BaseActivity {
         });
         wlPlayer.setDataSource(pathurl);
         wlPlayer.setOnlySoft(true);
-        wlPlayer.setWlGlSurfaceView(surfaceview);
+        wlPlayer.setZXGlSurfaceView(surfaceview);
         wlPlayer.setWlOnErrorListener(new WlOnErrorListener() {
             @Override
             public void onError(int code, String msg) {

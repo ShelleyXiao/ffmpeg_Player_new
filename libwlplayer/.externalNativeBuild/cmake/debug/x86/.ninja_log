@@ -1,0 +1,25 @@
+# ninja log v5
+4	198	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/WlAudioChannel.cpp.o	3ff01965f856bdf7
+6	322	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/audio_decoder.cpp.o	20f759074c69647a
+9	330	0	CMakeFiles/zxplayer.dir/src/main/cpp/JavaJNICallback.cpp.o	c3107f2e3c88b72e
+7	340	0	CMakeFiles/zxplayer.dir/src/main/cpp/ZXVideoPlayer.cpp.o	4b44556e150369e1
+3	419	0	CMakeFiles/zxplayer.dir/src/main/cpp/video/video_decoder.cpp.o	81e16e6ab13084ea
+323	476	0	CMakeFiles/zxplayer.dir/src/main/cpp/WlPlayStatus.cpp.o	83fd14a305d61e88
+1	519	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/audio_output.cpp.o	de88b6c309e6145d
+199	534	0	CMakeFiles/zxplayer.dir/src/main/cpp/base_player.cpp.o	15c8e3bda6225c41
+473	615	0	CMakeFiles/zxplayer.dir/src/main/cpp/common/opensl_media/opensl_es_context.cpp.o	438faadca31487cb
+338	661	0	CMakeFiles/zxplayer.dir/src/main/cpp/video_player_control.cpp.o	88bf1485e4f8fb3d
+417	732	0	CMakeFiles/zxplayer.dir/src/main/cpp/common/WlQueue.cpp.o	c601fe2025d48cac
+732	853	0	../../../../build/intermediates/cmake/debug/obj/x86/libzxplayer.so	3be7c64fd0d9662c
+6	158	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/audio_channel.cpp.o	d2b442aaa922cee8
+7	167	0	CMakeFiles/zxplayer.dir/src/main/cpp/base_player.cpp.o	15c8e3bda6225c41
+3	169	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/audio_output.cpp.o	de88b6c309e6145d
+10	282	0	CMakeFiles/zxplayer.dir/src/main/cpp/JavaJNICallback.cpp.o	c3107f2e3c88b72e
+4	313	0	CMakeFiles/zxplayer.dir/src/main/cpp/video/video_decoder.cpp.o	81e16e6ab13084ea
+8	396	0	CMakeFiles/zxplayer.dir/src/main/cpp/audio/audio_decoder.cpp.o	20f759074c69647a
+169	397	0	CMakeFiles/zxplayer.dir/src/main/cpp/WlPlayStatus.cpp.o	83fd14a305d61e88
+330	645	0	CMakeFiles/zxplayer.dir/src/main/cpp/common/opensl_media/opensl_es_context.cpp.o	438faadca31487cb
+282	739	0	CMakeFiles/zxplayer.dir/src/main/cpp/common/WlQueue.cpp.o	c601fe2025d48cac
+5	225	0	CMakeFiles/zxplayer.dir/src/main/cpp/ZXVideoPlayer.cpp.o	4b44556e150369e1
+3	282	0	CMakeFiles/zxplayer.dir/src/main/cpp/video_player_control.cpp.o	88bf1485e4f8fb3d
+366	675	0	../../../../build/intermediates/cmake/debug/obj/x86/libzxplayer.so	183768d0b086143b
